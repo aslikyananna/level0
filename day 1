@@ -1,0 +1,38 @@
+ls=[1,5,2,3,4]
+max=ls[0]
+index=0
+while index!=len(ls):
+    if ls[index]>max:
+        max=ls[index]
+    index += 1
+print(max)
+
+
+ls=[1,5,2,3,4,0]
+min=ls[0]
+index=0
+while index !=len(ls):
+    if ls[index]<min:
+        min=ls[index]
+    index+=1
+print(min)
+
+
+# ls=[1,5,2,3,4]
+# max_index=0
+# max=ls[0]
+# for i in range(1,len(ls)):
+#     if ls[i]>max:
+#         max=ls[i]
+#         max_index = i
+# print(max_index)
+#
+# ls=[1,5,2,3,4]
+# min=ls[0]
+# min_index=0
+# for i in range(1,len(ls)):
+#     if ls[i]<min:
+#         min=ls[i]
+#         min_index = i
+# print(min_index)
+#
