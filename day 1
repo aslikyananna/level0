@@ -36,3 +36,38 @@ print(min)
 #         min_index = i
 # print(min_index)
 #
+
+
+ls=[1,5,2,3,4]
+max=ls[0]
+min=ls[0]
+for i in range(1,len(ls)):
+    if ls[i]<min:
+        min=ls[i]
+    elif  ls[i]>max:
+        max=ls[i]
+print(max+min)
+
+ls=[1,2,9,0]
+sum=0
+mul=1
+for i in range(len(ls)):
+    sum+=ls[i]
+    mul*=ls[i]
+print(sum,mul)
+
+
+ls=[1,3,9,10,0]
+for i in range(len(ls)):
+    ls[i]=ls[i]/len(ls)
+print(ls)
+
+
+
+ls=[]
+x=int(input("write a num:"))
+for _ in range(x):
+    y=int(input("write a num:"))
+    ls.append(y)
+print(ls)
+
