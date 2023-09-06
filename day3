@@ -1,0 +1,25 @@
+1. ls=[3,4,2,1,9,41,1]
+count=0
+for i in range(len(ls)):
+    if ls[i] % 2 != 0:
+        count+=1
+print(count)
+
+
+  5.
+  ls=[3,54,6,7,2,3,4,4,5,]
+for i in range(len(ls[::-1])):
+    if ls[i]% 2!=0:
+        ls.append(ls[i])
+        ls.remove(ls[i])
+print(ls)
+
+  6.
+  ls=[3,54,6,7,]
+ls2=[3,54,6,7,]
+target=True
+if len(ls)==len(ls2):
+    for i in range(len(ls)):
+        if ls[i]!=ls2[i]:
+            target=False
+print(target)
