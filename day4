@@ -10,6 +10,15 @@
         c=a+b
     return c
 print(foo(10))
+
+2.
+def foo(x):
+    x=int(input("num: "))
+    for i in range(1,10):
+        print(i,"*",x,"=",i*x)
+foo(5)
+
+
 3.
 def fac(x):
     res=1
