@@ -24,18 +24,10 @@ foo([0,8,9])
     return x%10 +foo(x//10)
 print(foo(123))
 
-def foo(x,y):
-    if x==y:
-        return x
-    elif x<y and  y%x==0:
-        return x
-    elif x<y and  y%x!=0:
-        foo(x-1,y)
-        return foo(x-1,y)
-    elif y<x and  x%y==0:
-        return y
-    elif y<x and  x%y!=0:
-        foo(x,y-1)
-        return foo(x, y-1)
 
-print(foo(10,6))
+5.def foo(x,y):
+    if y==0:
+        return x
+    return foo(y,x%y)
+print(foo(0,90))
+
