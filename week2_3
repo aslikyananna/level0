@@ -31,5 +31,14 @@ print(foo([[1,2,3],[12,3,4], [1,2,3]]))
     return sum
 print(foo([[1,2,3],[12,3,2],[4,2,3]]))
 
-5.
+5.def foo(mat):
+    sum=0
+    for i in range(len(mat)):
+        for j in range(len(mat[0])):
+            if i<=j:
+                sum+=mat[i][j]
+    return sum
+print(foo([[1,2,3],[12,3,4], [1,2,3]]))
+
+
 
