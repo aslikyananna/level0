@@ -1,0 +1,38 @@
+mat=[[1,2,3],
+     [4,10,6],
+     [7,8,9]]
+max=mat[0][0]
+for i in range(len(mat)):
+    for j in range(len(mat[0])):
+        if mat[i][j]>max:
+            max=mat[i][j]
+print(max)
+
+
+
+mat=[[1,2,3],
+     [4,0,6],
+     [7,8,9]]
+min=mat[0][0]
+index_i=0
+index_j=0
+for i in range(len(mat)):
+    for j in range(len(mat[0])):
+        if mat[i][j]<min:
+            min=mat[i][j]
+            index_j=j
+            index_i=i
+print(min,index_j,index_i)
+
+
+
+
+mat=[[1,2,3],
+     [4,10,6],
+     [7,8,9]]
+ls=[]
+for i in range(len(mat)):
+    ls.append(max(mat[i]))
+print(ls)
+
+
