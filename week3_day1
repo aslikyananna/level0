@@ -1,0 +1,44 @@
+1. def foo(n):
+ 
+    return [sum(i) for i in [[x for x in range(n)] for y in range(n)]]
+
+print(foo(4))
+
+
+///
+def foo(n):
+    mat=[[x for x in range(n)] for y in range(n)]
+    return [sum(i) for  i in mat]
+print(foo(3))
+
+2.
+def foo(n):
+    return sum([i for i in range(1,n) if n%i==0])==n
+print(foo(6))
+
+3.def transpose_matrix(matrix):
+    return [[matrix[i][j] for i in range(len(matrix))] for j in range(len(matrix[0]))]
+
+4. def foo(n):
+    return sum([i for i in range(1,n+1) if n%i==0])
+
+print(foo(3))
+
+5.
+def foo(n):
+    return [i for i in range(1,n+1) if i%2==0]
+
+print(foo(50))
+
+
+6.
+def foo(n):
+
+    return True if n==2 or all(n%i !=0 for i in range(2,int(n**0.5)+1)) else False
+
+print(foo(8))
+
+
+
+
+
