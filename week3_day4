@@ -1,0 +1,61 @@
+1. def foo(s,iterable):
+    new=str()
+    for i in range(len(iterable)):
+            new+= iterable[i] + s
+    new = new[:len(new) - 1]
+
+    return new
+
+print(foo(",",["hel", " w", "anna"]))
+
+2.def max(iterable):
+    max_val=iterable[0]
+    for i in range(len(iterable)):
+            if iterable[i]>max_val:
+                max_val=iterable[i]
+
+    return max_val
+
+print(max([9,1,2,4,8]))
+
+3.def pop(iterable,index=None):
+    if index is None:
+        tmp = iterable[-1]
+        del iterable[-1]
+        return tmp
+    tmp=iterable[index]
+    del iterable[index]
+    return tmp, iterable
+
+print(pop([1,2,4,5],3))
+
+5.
+def split(iterable,sep=" "):
+    ls=[]
+    str=''
+    for i in range(len(iterable)):
+           if iterable[i] !=sep:
+               str+=iterable[i]
+           else:
+                ls.append(str)
+                str=""
+    else:
+        ls.append(str)
+
+    return ls
+
+
+print(split("anna, an an", ','))
+
+
+4.def foo(string,sub):
+    lenghth=len(sub)
+    for i in range(len(string)):
+        if string[i:i+lenghth]==sub:
+            return True
+    else:
+        return False
+
+
+
+print(foo("annadsasadsabok", 'dsab'))
